@@ -1,6 +1,7 @@
 - 👋 Hi, I’m Nwachukwu Ujubuonu
 - 👀 I’m interested in Math, Programming, Spreadsheets, and Frontend Development.
 - 🌱 I’m knowledgeable in React, Next, and Apps Script
+- 🌱 I am currently working on infamy.gg
 - 📫 How to reach me nwachukwuujubuonu@gmail.com
 
 <!---
