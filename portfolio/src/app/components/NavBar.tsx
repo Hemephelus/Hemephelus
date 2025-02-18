@@ -1,5 +1,5 @@
 "use client";
-import { NavLink, ContactLink, SimpleLink } from "@/components/ui/Links";
+import { NavLink, ContactLink } from "@/components/ui/Links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -51,6 +51,7 @@ export default function NavBar() {
               href={link.href}
               label={link.label}
               isActive={isActivePath(location, link.href)}
+              key={link.label}
             />
           ))}
         </section>
