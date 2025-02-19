@@ -1,5 +1,4 @@
 import { ClipboardCopy } from "@/components/ui/CopyToClipboard";
-import GitHubIconComponent from "@/components/ui/icons";
 import { SimpleLink } from "@/components/ui/Links";
 import { MapPinIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";

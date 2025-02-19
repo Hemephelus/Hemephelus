@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
-import { ContactLink } from '@/components/ui/Links';
 
 interface JobCardProps {
   logoSrc: string;

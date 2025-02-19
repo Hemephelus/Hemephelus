@@ -1,6 +1,6 @@
 import { Heading5, Heading2 } from "@/components/ui/Texts/Heading";
 import React from "react";
-import { ClientCard, JobCard } from "../JobCard";
+import { ClientCard } from "../JobCard";
 
 export default function FreelanceSection() {
   return (
