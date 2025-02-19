@@ -40,9 +40,9 @@ const isActivePath = (pathname: string, href: string): boolean => {
 export default function NavBar() {
   const location = usePathname();
   return (
-    <nav className="flex justify-between py-4 px-20 items-center border-b border-b-dark2 sticky top-0 bg-light1">
-      <Link href="/" className="font-instrument-serif capitalize text-3xl">
-        Nwachukwu Ujubuonu
+    <nav className="flex justify-between py-4 px-20 items-center border-b border-b-dark2 sticky top-0 bg-light1 z-10">
+      <Link href="/" className="font-instrument-serif capitalize text-3xl ">
+        N
       </Link>
       <div className="font-space-grotesk uppercase flex gap-8 items-center">
         <section className="flex gap-6">

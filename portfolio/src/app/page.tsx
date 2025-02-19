@@ -1,11 +1,15 @@
+import FreelanceSection from "./hompageComponents/Sections/FreelanceSection";
+import HeroSection from "./hompageComponents/Sections/HeroSection";
+import WorkExperienceSection from "./hompageComponents/Sections/WorkExperienceSection";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-space-grotesk">
-      {/* HERO COMP */}
-      {/* WORK Experience COMP */}
-      {/* PROJECTS COMP */}
-      {/* services COMP */}
-      {/* About Me COMP */} 
+    <div className="">
+      <HeroSection/>  
+      <WorkExperienceSection/>
+      <FreelanceSection/>
+      {/* Tools COMP */}
+      {/* Projects COMP */} 
     </div>
   );
 }

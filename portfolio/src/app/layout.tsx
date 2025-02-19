@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${instrumentSerif.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${instrumentSerif.variable} antialiased relative`}
       >
        <NavBar/>
         {children}
