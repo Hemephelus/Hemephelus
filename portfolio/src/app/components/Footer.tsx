@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="grid grid-cols-[auto,1fr,auto]">
+    <footer className="grid grid-rows-[auto,1fr,auto] md:grid-cols-[auto,1fr,auto]">
       <LeftSection />
       <MiddleSection />
       <RightSection />
@@ -16,7 +16,7 @@ export default function Footer() {
 
 function LeftSection() {
   return (
-    <section className="font-space-grotesk p-8 uppercase">
+    <section className="font-space-grotesk p-8 lg:p-16 uppercase  border-y border-y-dark2 text-center md:text-left">
       <ul className="flex flex-col gap-4">
         <li>
           <SimpleLink label="Home" href="/" />
@@ -33,7 +33,7 @@ function LeftSection() {
 }
 function MiddleSection() {
   return (
-    <section className="border-x border-x-dark2 grid place-content-center text-center font-space-grotesk gap-4 p-8">
+    <section className="border-x border-x-dark2 grid place-content-center text-center font-space-grotesk gap-4 px-4 py-8 md:p-8 text-xs md:text-base">
       <h2 className=" capitalize text-5xl font-instrument-serif">
       Nwachukwu Ujubuoñu 	       </h2>
       <p className="font-semi-bold text-lg font-medium">SOFTWARE DEVELOPER</p>
@@ -72,7 +72,7 @@ function MiddleSection() {
 }
 function RightSection() {
   return (
-    <section className="font-space-grotesk p-8 uppercase">
+    <section className="font-space-grotesk p-8 lg:p-16 uppercase  border-y border-y-dark2 text-center md:text-right">
       <ul className="flex flex-col gap-4">
         <li>
           <SimpleLink label="services" href="/services" />

@@ -5,13 +5,13 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="grid grid-cols-2">
-      <div className="border-b border-b-dark1 bg-light2 flex flex-col justify-center p-20 gap-4 font-space-grotesk">
+    <section className="grid md:grid-cols-2 ">
+      <div className="border-b border-b-dark1 bg-light2 flex flex-col justify-center p-8 lg:p-20 gap-4 font-space-grotesk text-xs md:text-base ">
         <p className="text-5xl font-instrument-serif font-semi-bold">
         Nwachukwu Ujubuoñu 	 
         </p>
         <p className="text-2xl font-semi-bold">
-          SOFTWARE ENGINEER [FRONT-END]
+          SOFTWARE ENGINEER
         </p>
         <div className="flex gap-1 items-center">
           <MapPinIcon className="size-4" />

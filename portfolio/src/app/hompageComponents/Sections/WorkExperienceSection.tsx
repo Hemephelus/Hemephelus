@@ -4,7 +4,7 @@ import {JobCard} from "../JobCard";
 
 export default function WorkExperienceSection() {
   return (
-    <section className="grid bg-light1 p-20 gap-8 border-b border-dark2">
+    <section className="grid bg-light1 p-8 lg:p-16 gap-8 border-b border-dark2">
       <div className="grid gap-4">
         <Heading5>WORK EXPERIENCE</Heading5>
         <Heading2>Places I have worked</Heading2>

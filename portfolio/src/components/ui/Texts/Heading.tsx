@@ -8,7 +8,7 @@ export function Heading1() {
 }
 
 export function Heading2({ children }: HeadingProps) {
-  return <h2 className="font-instrument-serif text-5xl"> {children}</h2>;
+  return <h2 className="font-instrument-serif text-3xl md:text-5xl"> {children}</h2>;
 }
 
 export function Heading3() {

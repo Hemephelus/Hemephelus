@@ -25,8 +25,8 @@ export function JobCard({
   logoSize = 200
 }: JobCardProps) {
   return (
-    <section className="grid grid-cols-[auto,1fr] gap-4">
-      <figure className="border border-dark2 bg-light2 p-2 w-[300px] h-[300px] grid place-content-center">
+    <section className="grid md:grid-cols-[auto,1fr] gap-4">
+      <figure className="border border-dark2 bg-light2 md:w-[300px] h-[100%] grid place-content-center p-8">
         <Image
           src={logoSrc}
           alt={logoAlt}
@@ -38,7 +38,7 @@ export function JobCard({
         <p className="font-space-grotesk text-3xl">{title}</p>
         <p className="font-space-grotesk">{company}</p>
         <p className="font-space-grotesk opacity-75">{dateRange}</p>
-        <div className='flex gap-4'>
+        <div className='flex flex-wrap gap-4'>
           {projectLink && (
             <Link
             href={projectLink}
@@ -74,8 +74,9 @@ export function ClientCard({
   logoSize = 200
 }: JobCardProps) {
   return (
-    <section className="grid  gap-4 w-[300px]">
-      <figure className="border border-dark2 bg-light2 p-2 w-[300px] h-[300px] grid place-content-center">
+    
+    <section className="grid md:max-w-[300px] gap-4">
+      <figure className="border border-dark2 bg-light2  grid place-content-center p-8">
         <Image
           src={logoSrc}
           alt={logoAlt}
@@ -83,9 +84,9 @@ export function ClientCard({
           height={logoSize}
         />
       </figure>
-      <div className="flex flex-col gap-2 justify-end w-[300px]">
+      <div className="flex flex-col gap-2 justify-end">
         <p className="font-space-grotesk text-3xl">{company}</p>
-        <div className='flex gap-4'>
+        <div className='flex flex-wrap gap-4'>
           {projectLink && (
             <Link
             href={projectLink}
