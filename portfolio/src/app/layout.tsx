@@ -28,13 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${instrumentSerif.variable} antialiased relative`}
       >
-       <NavBar/>
+        <NavBar />
         {children}
-        <CallToAction/>
-        <Footer/>
+        <CallToAction />
+        <Footer />
       </body>
     </html>
   );
