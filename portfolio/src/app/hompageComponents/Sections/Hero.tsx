@@ -38,12 +38,12 @@ export default function Hero() {
             <img src="/twitter-bird.svg" alt="twitter" className="w-8 h-8" />
           </Link>
         </div>
-        <p>
-          <span className="flex items-center gap-4 opacity-80   ">
-            nwachukwuujubuonu@gmail.com
-            <ClipboardCopy copyText={"nwachukwuujubuonu@gmail.com"} />
-          </span>
-        </p>
+         <p className="flex items-center gap-2 opacity-80   ">
+                <span >
+                  nwachukwuujubuonu@gmail.com
+                </span>
+                  <ClipboardCopy copyText={"nwachukwuujubuonu@gmail.com"} />
+              </p>
       </div>
       <div className="bg-dark1">
         <img src="/me2.png" className="" alt="" />

@@ -6,17 +6,20 @@ export function NavLink({
   href,
   label,
   isActive,
+  onClick,
 }: {
   href: string;
   label: string;
   isActive: boolean;
+  onClick?: () => void;
 }) {
   return (
     <Link
       href={href}
-      className={`cursor-pointer hover:underline  ${
+      className={`cursor-pointer hover:underline ${
         isActive ? "underline" : ""
       }`}
+      onClick={onClick}
     >
       {label}
     </Link>
@@ -29,11 +32,12 @@ export function SimpleLink({ href, label }: { href: string; label: string }) {
     </Link>
   );
 }
-export function ContactLink() {
+export function ContactLink({ onClick }: { onClick?: () => void }) {
   return (
     <Link
       href={"/contact"}
       className="py-2 px-4 uppercase bg-accent text-light1 border-2 border-transparent hover:border-accent hover:bg-transparent hover:text-accent flex gap-2 duration-300 font-bold font-space-grotesk"
+      onClick={onClick}
     >
       <span>get in touch</span>
       <ArrowRightIcon className="size-6 " />

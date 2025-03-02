@@ -1,6 +1,7 @@
 "use client";
 import { NavLink, ContactLink } from "@/components/ui/Links";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
@@ -43,7 +44,12 @@ export default function NavBar() {
   return (
     <nav className="flex justify-between py-4 px-4 md:px-8 lg:px-16 items-center border-b border-b-dark2 sticky top-0 bg-light1 z-10">
       <Link href="/" className="font-instrument-serif capitalize text-3xl ">
-        N
+        <Image
+                 src={'/logo.svg'}
+                 alt={'logo'}
+                 width={50}
+                 height={50}
+               />
       </Link>
       <div className="font-space-grotesk uppercase md:flex gap-8 items-center hidden">
         <section className="flex gap-6">
@@ -82,10 +88,11 @@ function HamBurgerMenu(){
           label={link.label}
           isActive={isActivePath(location, link.href)}
           key={link.label}
+          onClick={()=>setIsOpen(false)}
         />
       ))}
     </section>
-    <ContactLink />
+    <ContactLink onClick={()=>setIsOpen(false)} />
   </div>
     </>
   )
