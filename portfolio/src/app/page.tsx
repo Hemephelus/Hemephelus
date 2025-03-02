@@ -1,15 +1,15 @@
-import FreelanceSection from "./hompageComponents/Sections/FreelanceSection";
-import HeroSection from "./hompageComponents/Sections/HeroSection";
-import WorkExperienceSection from "./hompageComponents/Sections/WorkExperienceSection";
+import FreelanceWorks from "./hompageComponents/Sections/FreelanceWorks";
+import Hero from "./hompageComponents/Sections/Hero";
+import Projects from "./hompageComponents/Sections/Projects";
+import WorkExperiences from "./hompageComponents/Sections/WorkExperiences";
 
 export default function Home() {
   return (
     <div className="">
-      <HeroSection/>  
-      <WorkExperienceSection/>
-      <FreelanceSection/>
-      {/* Tools COMP */}
-      {/* Projects COMP */} 
+      <Hero/>  
+      <WorkExperiences/>
+      <FreelanceWorks/>
+      <Projects/>
     </div>
   );
 }

@@ -24,9 +24,9 @@ function LeftSection() {
         <li>
           <SimpleLink label="Projects" href="/" />
         </li>
-        <li>
+        {/* <li>
           <SimpleLink label="About" href="/" />
-        </li>
+        </li> */}
       </ul>
     </section>
   );
@@ -47,11 +47,8 @@ function MiddleSection() {
         <MapPinIcon className="size-4" />
         {/* <img src='/Flag_of_Nigeria.svg' alt='flag' className='w-5 h-6'/> */}
         <span>Lagos, Nigeria.</span>
-      </div>
-      <p className="opacity-75">
-        I develop apps using React. I create small game on the web for
-        fun and <br />I sprinkle a little bit of AI/ML into my games.
-      </p>
+      </div> 
+  
 
       <div className=" flex gap-2 justify-center">
         <Link href={"https://github.com/Hemephelus"} target="_blank">
@@ -74,15 +71,18 @@ function RightSection() {
   return (
     <section className="font-space-grotesk p-8 lg:p-16 uppercase  border-y border-y-dark2 text-center md:text-right">
       <ul className="flex flex-col gap-4">
-        <li>
+        {/* <li>
           <SimpleLink label="services" href="/services" />
-        </li>
+        </li> */}
         <li>
           <SimpleLink label="contact" href="/contact" />
         </li>
         <li>
-          <SimpleLink label="blanc lab" href="/" />
+          <SimpleLink label="About" href="/about" />
         </li>
+        {/* <li>
+          <SimpleLink label="blanc lab" href="/" />
+        </li> */}
       </ul>
     </section>
   );

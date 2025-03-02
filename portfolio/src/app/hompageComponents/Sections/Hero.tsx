@@ -3,10 +3,10 @@ import { MapPinIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React from "react";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
-    <section className="grid md:grid-cols-2 ">
-      <div className="border-b border-b-dark1 bg-light2 flex flex-col justify-center p-8 lg:p-20 gap-4 font-space-grotesk text-xs md:text-base ">
+    <section className="grid md:grid-cols-2  border-b border-b-dark1">
+      <div className=" bg-light2 flex flex-col justify-center p-8 lg:p-20 gap-4 font-space-grotesk text-xs md:text-base ">
         <p className="text-5xl font-instrument-serif font-semi-bold">
         Nwachukwu Ujubuoñu 	 
         </p>
@@ -18,10 +18,11 @@ export default function HeroSection() {
           {/* <img src='/Flag_of_Nigeria.svg' alt='flag' className='w-5 h-6'/> */}
           <span>Lagos, Nigeria.</span>
         </div>
+        {/* <p className="opacity-75">
+        I make computers do cool things to help people work faster and better!
+        </p> */}
         <p className="opacity-75">
-          I develop apps using React, I create small game on the web for fun and
-          I sprinkle a little bit of AI/ML into my games.
-        </p>
+        A showcase of my work in web development,  automation, and data science, where I share my projects, research, and cool visualizations.        </p>
        
         <div className=" flex gap-2">
           <Link href={"https://github.com/Hemephelus"} target="_blank">

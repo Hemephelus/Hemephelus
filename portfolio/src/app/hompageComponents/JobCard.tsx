@@ -76,7 +76,7 @@ export function ClientCard({
   return (
     
     <section className="grid md:max-w-[300px] gap-4">
-      <figure className="border border-dark2 bg-light2  grid place-content-center p-8">
+      <figure className="border border-dark2 bg-light2 h-[300px] grid place-content-center p-8">
         <Image
           src={logoSrc}
           alt={logoAlt}

@@ -1,8 +1,9 @@
 import { Heading5, Heading2 } from "@/components/ui/Texts/Heading";
 import React from "react";
 import { ClientCard } from "../JobCard";
+import { projects } from "@/constances";
 
-export default function FreelanceSection() {
+export default function FreelanceWorks() {
   return (
     <section className="grid bg-light1 p-8 lg:p-16 gap-8 border-b border-dark2">
       <div className="grid gap-4">
@@ -11,15 +12,17 @@ export default function FreelanceSection() {
       </div>
 
       <ul className="grid gap-4 grid-cols-fluid">
-        <li>
-          <ClientCard
-            logoSrc="/sppg.svg"
-            logoAlt="sppg"
-            company="SPPG"
-            projectLink="/projects/infamy"
-            websiteLink="https://www.infamy.gg/"
-          />
-        </li>
+        {projects.freelance.map((work, index) => (
+          <li key={index}>
+            <ClientCard
+              logoSrc={work.logoSrc}
+              logoAlt={work.logoAlt}
+              company={work.company}
+              projectLink={work.projectLink}
+              websiteLink={work.websiteLink}
+            />
+          </li>
+        ))}
       </ul>
     </section>
   );

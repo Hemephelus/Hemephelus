@@ -1,16 +1,16 @@
 import { Heading5, Heading2 } from "@/components/ui/Texts/Heading";
 import React from "react";
+import { ClientCard } from "../JobCard";
 import { projects } from "@/constances";
 import { SeeMoreLink } from "@/components/ui/Links";
-import { ClientCard } from "@/app/hompageComponents/JobCard";
 
 export default function Projects() {
-  const wedDevelopment = projects.personal_projects.wed_development;
-  const dataScience = projects.personal_projects.data_science;
-  const p5js = projects.personal_projects.p5js;
+  const wedDevelopment = projects.personal_projects.wed_development.slice(0, 4);
+  const dataScience = projects.personal_projects.data_science.slice(0, 4);
+  const p5js = projects.personal_projects.p5js.slice(0, 4);
   return (
     <section className="grid bg-light1 p-8 lg:p-16 gap-16 border-b border-dark2">
-      <Heading5>Personal Projects</Heading5>  
+      <Heading5>Personal Projects</Heading5>
       <div className="grid gap-8 " id="#web-development">
         <Heading2>Featured Web Projects</Heading2>
 

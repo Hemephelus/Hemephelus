@@ -17,10 +17,10 @@ const links = [
     label: "about",
     href: "/about",
   },
-  {
-    label: "services",
-    href: "/services",
-  },
+  // {
+  //   label: "services",
+  //   href: "/services",
+  // },
 ];
 
 const isActivePath = (pathname: string, href: string): boolean => {
