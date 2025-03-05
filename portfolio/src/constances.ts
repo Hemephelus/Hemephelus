@@ -10,20 +10,24 @@ export const projects = {
         projectLink: "/projects/glascript",
         websiteLink: "https://www.glascript.com/",
         overview: [
-          "Glascript is a dedicated platform designed to assist Google Apps Script developers in discovering and integrating Apps Script libraries into their projects. The platform simplifies the process of finding relevant libraries and provides users with the necessary script IDs to facilitate seamless installation."
+          "Glascript is a dedicated platform designed to assist Google Apps Script developers in discovering and integrating Apps Script libraries into their projects. The platform simplifies the process of finding relevant libraries and provides users with the necessary script IDs to facilitate seamless installation.",
         ],
         problem: [
-          "Fragmented Library Resources: There was no centralized repository or platform where developers could easily search for and access Apps Script libraries, leading to inefficiencies and prolonged development times."
+          "Fragmented Library Resources: There was no centralized repository or platform where developers could easily search for and access Apps Script libraries, leading to inefficiencies and prolonged development times.",
         ],
         solution: [
           "Centralized Library Repository: Aggregated a wide range of Apps Script libraries into a single platform, allowing developers to search and discover libraries relevant to their needs.",
           "Direct Integration Support: Provided script IDs alongside each library, enabling developers to quickly copy and integrate them into their projects without extensive searches.",
-          "User-Friendly Interface: Designed an intuitive and clean interface to enhance user experience, making the process of finding and integrating libraries straightforward."
+          "User-Friendly Interface: Designed an intuitive and clean interface to enhance user experience, making the process of finding and integrating libraries straightforward.",
         ],
         result: [
           "Increased Engagement: The site currently receives over 3,000 visits per week, indicating strong community interest and reliance on the platform.",
         ],
-        slide_imgs: [],
+        slide_imgs: [
+          "/glascript/home.jpg",
+          "/glascript/library.jpg",
+          "/glascript/docs.jpg",
+        ],
         tools: [
           { name: "Nextjs", src: "/tools/nextjs.png" },
           { name: "Tailwind", src: "/tools/tailwind.png" },
@@ -42,12 +46,34 @@ export const projects = {
         title: "Greedy pig",
         projectLink: "/projects/greedy-pig",
         websiteLink: "https://greedy-pig.vercel.app/",
-        overview: [],
-        problem: [],
-        solution: [],
-        result: [],
-        slide_imgs: [],
-        tools: [],
+        overview: [
+          "Greedy Pig is a web-based adaptation of the traditional dice game 'Pig' designed to offer a digital alternative to the classic pen-and-paper gameplay. This online version allows players to enjoy the game without the need for physical dice or scorekeeping materials.",
+        ],
+        problem: [
+          "Inconvenient Gameplay Mechanics: The necessity for physical dice and manual scorekeeping made the game less accessible and enjoyable, especially in settings where these materials weren't readily available.",
+        ],
+        solution: [
+          "Digital Dice Rolling: Implemented an online dice-rolling mechanism, eliminating the need for physical dice and ensuring fair play.",
+          "Automated Scorekeeping: Integrated real-time score tracking to remove manual calculations and reduce potential errors.",
+          "User-Friendly Interface: Designed an intuitive and engaging interface to enhance user experience and make the game accessible to players of all ages.",
+        ],
+        result: [
+          "Positive User Feedback: The game has been played by numerous individuals, all of whom have expressed enjoyment and appreciation for the digital adaptation.",
+          "Increased Accessibility: By providing an online platform, Greedy Pig has made the classic game more accessible to a wider audience, allowing people to play anytime without the need for physical materials.",
+        ],
+        slide_imgs: [
+          "/greedy-pig/home.jpg",
+          "/greedy-pig/setup.jpg",
+          "/greedy-pig/game.jpg",
+          "/greedy-pig/game-over.jpg",
+        ],
+        tools: [
+          { name: "Vite", src: "/tools/vite.png" },
+          { name: "Tailwind", src: "/tools/tailwind.png" },
+          { name: "React", src: "/tools/react.png" },
+          // { name: "Supabase", src: "/tools/supabase.png" },
+          { name: "JavaScript", src: "/tools/javascript.png" },
+        ],
       },
       {
         logoSrc: "/moniac.svg",
@@ -57,27 +83,46 @@ export const projects = {
         title: "Moniac",
         projectLink: "/projects/moniac",
         websiteLink: "https://moniac.vercel.app/",
-        overview: [],
-        problem: [],
-        solution: [],
-        result: [],
-        slide_imgs: [],
-        tools: [],
+        overview: [
+          "Our simulation is inspired by Bill Phillips' hydraulic economics computer, known as the MONIAC (Monetary National Income Analogue Computer), invented in 1949. This web-based simulation models key economic variables specific to Nigeria, allowing users to experiment with various economic policies. Users can adjust parameters such as interest rates and taxation to visualize the effects of policy changes on the Nigerian economy.",
+        ],
+        problem: [
+          "Complex Economic Concepts: Economic theories and models are often abstract, making them less accessible to students and policymakers.",
+          "Lack of Interactive Learning Tools: There is a scarcity of platforms that allow users to experiment with economic policies in a controlled, risk-free environment.",
+        ],
+        solution: [
+          "Interactive Policy Adjustment: Users can modify parameters such as interest rates and taxation levels to observe real-time effects on economic indicators.",
+          "Visual Representation: The simulation provides graphical outputs, helping users visualize how changes in policies influence the economy.",
+          "Educational Resource: Serves as a teaching tool for students and educators to better understand economic dynamics through hands-on experimentation.",
+          "User Engagement: Incorporated an Easter egg feature allowing users to click and move elements around the screen, enhancing interactivity and user engagement.",
+        ],
+        result: [
+          "Positive Feedback: Users appreciate the interactive nature of the tool, finding it both informative and engaging."
+        ],
+        slide_imgs: [
+          "/moniac/home.jpg",
+        ],
+        tools: [
+          { name: "Tailwind", src: "/tools/tailwind.png" },
+          { name: "JavaScript", src: "/tools/javascript.png" },
+          { name: "P5js", src: "/P5js.png" },
+          { name: "HTML", src: "/tools/html.png" },
+        ],
       },
-      {
-        logoSrc: "/osisi.svg",
-        logoAlt: "osisi",
-        subTitle: "A web-based representation of my family tree. (Front-End)",
-        title: "Osisi",
-        projectLink: "/projects/osisi",
-        websiteLink: "https://osisi.vercel.app/",
-        overview: [],
-        problem: [],
-        solution: [],
-        result: [],
-        slide_imgs: [],
-        tools: [],
-      },
+      // {
+      //   logoSrc: "/osisi.svg",
+      //   logoAlt: "osisi",
+      //   subTitle: "A web-based representation of my family tree. (Front-End)",
+      //   title: "Osisi",
+      //   projectLink: "/projects/osisi",
+      //   websiteLink: "https://osisi.vercel.app/",
+      //   overview: [],
+      //   problem: [],
+      //   solution: [],
+      //   result: [],
+      //   slide_imgs: [],
+      //   tools: [],
+      // },
     ],
 
     data_science: [
@@ -227,16 +272,19 @@ export const projects = {
 
         "For authentication, I implemented an OTP system. Users enter their matriculation number, triggering an email containing a one-time password to the associated email address.",
       ],
-      result: [" After making architectural improvements, I reduced the reads to fewer than 2,000 per day, ensuring a more stable solution. [See Last slide]"],
+      result: [
+        " After making architectural improvements, I reduced the reads to fewer than 2,000 per day, ensuring a more stable solution. [See Last slide]",
+      ],
       slide_imgs: [
-        "/sppg/sppg-main-dashboard.jpg", 
-        "/sppg/sppg-g-attendance.jpg", 
-        "/sppg/sppg-g-makeup.jpg", 
-        "/sppg/sppg-g-status.jpg", 
-        "/sppg/sppg-g-assign.jpg", 
-        "/sppg/sppg-g-faq.jpg", 
-        "/sppg/sppg-before.jpg", 
-        "/sppg-after.jpg"],
+        "/sppg/sppg-main-dashboard.jpg",
+        "/sppg/sppg-g-attendance.jpg",
+        "/sppg/sppg-g-makeup.jpg",
+        "/sppg/sppg-g-status.jpg",
+        "/sppg/sppg-g-assign.jpg",
+        "/sppg/sppg-g-faq.jpg",
+        "/sppg/sppg-before.jpg",
+        "/sppg-after.jpg",
+      ],
       tools: [
         { name: "Nextjs", src: "/tools/nextjs.png" },
         { name: "Tailwind", src: "/tools/tailwind.png" },
@@ -259,18 +307,18 @@ export const projects = {
       projectLink: "/projects/infamy",
       websiteLink: "https://www.infamy.gg/",
       overview: [
-        "Infamy is a premier fantasy esports Discord community dedicated to bringing competitive gaming fans together through tournaments and interactive events for Valorant, Rainbow Six Siege, and Overwatch 2. Their mission is to create an engaging and competitive space where players can showcase their skills and connect with like-minded gamers."
+        "Infamy is a premier fantasy esports Discord community dedicated to bringing competitive gaming fans together through tournaments and interactive events for Valorant, Rainbow Six Siege, and Overwatch 2. Their mission is to create an engaging and competitive space where players can showcase their skills and connect with like-minded gamers.",
       ],
       problem: [
         "Manual Tournament Management: Tournament data, including player stats, match results, and leaderboard updates, was managed manually through Google Sheets, which was time-consuming and prone to errors.",
-        "Lack of Automation & User-Friendly Team Creation: The process of syncing tournament data between Discord and Google Sheets required manual intervention. Additionally, players had no streamlined way to create and manage their teams, leading to confusion and inefficiencies."
+        "Lack of Automation & User-Friendly Team Creation: The process of syncing tournament data between Discord and Google Sheets required manual intervention. Additionally, players had no streamlined way to create and manage their teams, leading to confusion and inefficiencies.",
       ],
       solution: [
         "Automated key tournament processes by integrating Google Apps Script with Google Sheets, reducing the need for manual data entry.",
         "Developed a custom Discord bot that connected directly to Google Sheets, allowing tournament organizers to fetch player stats, upload teams, and manage members' roles within Discord.",
         "Built a dedicated website to provide a seamless experience for users to create their teams effortlessly, reducing friction in tournament sign-ups.",
         "Implemented scheduled jobs to ensure tournament data remained up to date without manual intervention.",
-        "Optimized data fetching to improve performance while staying within Google API limits."
+        "Optimized data fetching to improve performance while staying within Google API limits.",
       ],
       result: [
         "Eliminated the need for manual data entry, improving efficiency.",

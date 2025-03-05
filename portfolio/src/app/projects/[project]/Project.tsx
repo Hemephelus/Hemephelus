@@ -6,16 +6,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { projects } from "@/constances";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import React from "react";
 import Image from "next/image";
 import {
   Heading2,
-  Heading6,
   Heading5,
-  Heading3,
   Heading4,
 } from "@/components/ui/Texts/Heading";
 import Link from "next/link";
@@ -30,6 +28,9 @@ export default function Project() {
   const [currentProject] = allProjects.filter(
     (project) => project.projectLink === pathname
   );
+  if(!currentProject){
+    redirect('/projects')
+  }
   return (
     <div className=" ">
       <div className="p-16 ">
