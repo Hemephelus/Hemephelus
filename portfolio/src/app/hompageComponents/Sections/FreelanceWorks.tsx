@@ -17,7 +17,8 @@ export default function FreelanceWorks() {
             <ClientCard
               logoSrc={work.logoSrc}
               logoAlt={work.logoAlt}
-              company={work.company}
+              title={work.title}
+              subTitle={work.subTitle}
               projectLink={work.projectLink}
               websiteLink={work.websiteLink}
             />

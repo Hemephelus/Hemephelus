@@ -10,7 +10,7 @@ export default function Projects() {
   const p5js = projects.personal_projects.p5js;
   return (
     <section className="grid bg-light1 p-8 lg:p-16 gap-16 border-b border-dark2">
-      <Heading5>Personal Projects</Heading5>  
+      <Heading5>Personal Projects</Heading5>
       <div className="grid gap-8 " id="#web-development">
         <Heading2>Featured Web Projects</Heading2>
 
@@ -20,7 +20,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 projectLink={work.projectLink}
                 websiteLink={work.websiteLink}
               />
@@ -39,7 +40,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 websiteLink={work.websiteLink}
               />
             </li>
@@ -56,7 +58,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 websiteLink={work.websiteLink}
               />
             </li>

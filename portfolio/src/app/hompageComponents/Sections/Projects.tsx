@@ -20,7 +20,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 projectLink={work.projectLink}
                 websiteLink={work.websiteLink}
               />
@@ -39,7 +40,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 websiteLink={work.websiteLink}
               />
             </li>
@@ -56,7 +58,8 @@ export default function Projects() {
               <ClientCard
                 logoSrc={work.logoSrc}
                 logoAlt={work.logoAlt}
-                company={work.company}
+                title={work.title}
+                subTitle={work.subTitle}
                 websiteLink={work.websiteLink}
               />
             </li>

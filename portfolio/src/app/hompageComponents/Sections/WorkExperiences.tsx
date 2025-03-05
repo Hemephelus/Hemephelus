@@ -18,7 +18,7 @@ export default function WorkExperiences() {
               logoSrc={work.logoSrc}
               logoAlt={work.logoAlt}
               title={work.title}
-              company={work.company}
+              subTitle={work.subTitle}
               dateRange={work.dateRange}
               projectLink={work.projectLink}
               websiteLink={work.websiteLink}

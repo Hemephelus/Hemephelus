@@ -7,7 +7,7 @@ interface JobCardProps {
   logoSrc: string;
   logoAlt: string;
   title?: string;
-  company: string;
+  subTitle: string;
   dateRange?: string;
   projectLink?: string;
   websiteLink?: string;
@@ -18,7 +18,7 @@ export function JobCard({
   logoSrc,
   logoAlt,
   title,
-  company,
+  subTitle,
   dateRange,
   projectLink,
   websiteLink,
@@ -36,7 +36,7 @@ export function JobCard({
       </figure>
       <div className="flex flex-col gap-2 justify-end">
         <p className="font-space-grotesk text-3xl">{title}</p>
-        <p className="font-space-grotesk">{company}</p>
+        <p className="font-space-grotesk">{subTitle}</p>
         <p className="font-space-grotesk opacity-75">{dateRange}</p>
         <div className='flex flex-wrap gap-4'>
           {projectLink && (
@@ -68,14 +68,15 @@ export function JobCard({
 export function ClientCard({
   logoSrc,
   logoAlt,
-  company,
+  subTitle,
+  title,
   projectLink,
   websiteLink,
   logoSize = 200
 }: JobCardProps) {
   return (
     
-    <section className="grid md:max-w-[300px] gap-4">
+    <section className="grid grid-rows-[auto,1fr] md:max-w-[300px] gap-2 h-full ">
       <figure className="border border-dark2 bg-light2 h-[300px] grid place-content-center p-8">
         <Image
           src={logoSrc}
@@ -84,8 +85,12 @@ export function ClientCard({
           height={logoSize}
         />
       </figure>
-      <div className="flex flex-col gap-2 justify-end">
-        <p className="font-space-grotesk text-3xl">{company}</p>
+      <div className="flex flex-col gap-4 justify-between">
+        <div>
+
+      <p className="font-space-grotesk text-3xl">{title}</p>
+      <p className="font-space-grotesk opacity-75">{subTitle}</p>
+        </div>
         <div className='flex flex-wrap gap-4'>
           {projectLink && (
             <Link
