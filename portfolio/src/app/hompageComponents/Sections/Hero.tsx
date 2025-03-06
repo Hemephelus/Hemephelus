@@ -1,5 +1,6 @@
 import { ClipboardCopy } from "@/components/ui/CopyToClipboard";
 import { MapPinIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -46,7 +47,7 @@ export default function Hero() {
               </p>
       </div>
       <div className="bg-dark1">
-        <img src="/me2.png" className="" alt="" />
+        <Image src="/me2.png" className="" alt="" width={1000} height={500}/>
       </div>
     </section>
   );

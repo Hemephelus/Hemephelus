@@ -12,6 +12,7 @@ interface JobCardProps {
   projectLink?: string;
   websiteLink?: string;
   logoSize?: number;
+  role?:string;
 }
 
 export function JobCard({
@@ -22,6 +23,7 @@ export function JobCard({
   dateRange,
   projectLink,
   websiteLink,
+  role,
   logoSize = 200
 }: JobCardProps) {
   return (
@@ -34,9 +36,10 @@ export function JobCard({
           height={logoSize}
         />
       </figure>
-      <div className="flex flex-col gap-2 justify-end">
+      <div className="flex flex-col gap-2 justify-end max-w-xl">
         <p className="font-space-grotesk text-3xl">{title}</p>
-        <p className="font-space-grotesk">{subTitle}</p>
+        <p className="font-space-grotesk">{role}</p>
+        <p className="font-space-grotesk opacity-75">{subTitle}</p>
         <p className="font-space-grotesk opacity-75">{dateRange}</p>
         <div className='flex flex-wrap gap-4'>
           {projectLink && (

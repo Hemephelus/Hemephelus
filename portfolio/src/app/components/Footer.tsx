@@ -1,6 +1,7 @@
 import { ClipboardCopy } from "@/components/ui/CopyToClipboard";
 import { SimpleLink } from "@/components/ui/Links";
 import { MapPinIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -45,23 +46,23 @@ function MiddleSection() {
       </p>
       <div className="flex gap-1 items-center justify-center">
         <MapPinIcon className="size-4" />
-        {/* <img src='/Flag_of_Nigeria.svg' alt='flag' className='w-5 h-6'/> */}
+        {/* <Image src='/Flag_of_Nigeria.svg' alt='flag' className='w-5 h-6'/> */}
         <span>Lagos, Nigeria.</span>
       </div> 
   
 
       <div className=" flex gap-2 justify-center">
         <Link href={"https://github.com/Hemephelus"} target="_blank">
-          <img src="/github.svg" alt="github" className="w-8 h-8" />
+          <Image src="/github.svg" alt="github" width={8} height={8} />
         </Link>
         <Link
           href={"https://www.linkedin.com/in/nwachukwu-ujubuonu-303149161/"}
           target="_blank"
         >
-          <img src="/linkedin.svg" alt="linkedin" className="w-8 h-8" />
+          <Image src="/linkedin.svg" alt="linkedin" width={8} height={8} />
         </Link>
         <Link href={"https://twitter.com/Hemephelus1"} target="_blank">
-          <img src="/twitter-bird.svg" alt="twitter" className="w-8 h-8" />
+          <Image src="/twitter-bird.svg" alt="twitter" width={8} height={8} />
         </Link>
       </div>
     </section>

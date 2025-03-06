@@ -15,6 +15,7 @@ import {
   Heading2,
   Heading5,
   Heading4,
+  Heading6,
 } from "@/components/ui/Texts/Heading";
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
@@ -33,12 +34,12 @@ export default function Project() {
   }
   return (
     <div className=" ">
-      <div className="p-16 ">
-        <div className="grid grid-cols-2  border border-dark2 ">
-          <div className=" bg-light2 flex flex-col justify-center p-8 lg:p-20 gap-4 font-space-grotesk text-xs md:text-base ">
-            <p className="text-5xl font-instrument-serif font-semi-bold">
+      <div className="p-4 md:p-8 lg:p-16">
+        <div className="grid grid-rows-[1fr,auto] lg:grid-cols-2  border border-dark2 ">
+          <div className=" bg-light2 flex flex-col justify-center p-4 md:p-8 lg:p-20 gap-4 font-space-grotesk text-xs md:text-base ">
+            <Heading2>
               {currentProject.title}
-            </p>
+            </Heading2>
 
             <p className="opacity-75">{currentProject.subTitle} </p>
 
@@ -69,7 +70,7 @@ export default function Project() {
               <ArrowTopRightOnSquareIcon className="size-4" />
             </Link>
           </div>
-          <figure className="border-l border-l-dark2  min-h-[500px] grid place-content-center p-8 bg-light2">
+          <figure className="border-t border-t-dark2 lg:border-l lg:border-l-dark2 lg:border-t-0  min-h-[500px] grid place-content-center lg:p-8 bg-light2">
             <Image
               src={currentProject.logoSrc}
               alt={currentProject.logoAlt}
@@ -81,12 +82,16 @@ export default function Project() {
       </div>
 
       <div>
-        <div className="p-16 grid grid-cols-[auto,1fr] gap-16">
-          <section className="flex flex-col">
+        <div className="p-4 md:p-8 lg:p-16 grid lg:grid-cols-[auto,1fr] gap-8 lg:gap-16">
+          <section className="flex flex-col gap-2">
             <Heading5>DESCRIPTION</Heading5>
             <Heading2>About the project</Heading2>
+            <Heading6>Role: {currentProject.role}</Heading6>
           </section>
           <section className="space-y-8">
+          <div className="flex justify-center p-8 bg-light2 border border-dark2">
+              <CarouselDemo srcs={currentProject.slide_imgs} />
+            </div>
             <DetailsSection
               header="Project Overview"
               body={currentProject.overview}
@@ -100,9 +105,7 @@ export default function Project() {
               body={currentProject.solution}
             />
             <DetailsSection header="The Result" body={currentProject.result} />
-            <div className="flex justify-center p-8 bg-light2 border border-dark2">
-              <CarouselDemo srcs={currentProject.slide_imgs} />
-            </div>
+          
           </section>
         </div>
       </div>
@@ -132,7 +135,7 @@ function CarouselDemo({ srcs = [] }: { srcs: string[] }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
+      <CarouselPrevious className=""/>
       <CarouselNext />
     </Carousel>
   );
@@ -148,9 +151,9 @@ function DetailsSection({
   return (
     <div className="space-y-1">
       <Heading4>{header}</Heading4>
-      <ul className="space-y-3 list-disc">
+      <ul className="space-y-3 list-disc list-inside lg:list-outside">
       {body.map((paragraph, i) => (
-          <li className="font-space-grotesk" key={i}>
+          <li className="font-space-grotesk text-xs md:text-sm lg:text-base" key={i}>
           {paragraph}
         </li>
       ))}

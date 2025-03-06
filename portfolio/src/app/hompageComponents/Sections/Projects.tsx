@@ -5,9 +5,9 @@ import { projects } from "@/constances";
 import { SeeMoreLink } from "@/components/ui/Links";
 
 export default function Projects() {
-  const wedDevelopment = projects.personal_projects.wed_development.slice(0, 4);
-  const dataScience = projects.personal_projects.data_science.slice(0, 4);
-  const p5js = projects.personal_projects.p5js.slice(0, 4);
+  const wedDevelopment = projects.personal_projects.wed_development.slice(0, 3);
+  const dataScience = projects.personal_projects.data_science.slice(0, 3);
+  const p5js = projects.personal_projects.p5js.slice(0, 3);
   return (
     <section className="grid bg-light1 p-8 lg:p-16 gap-16 border-b border-dark2">
       <Heading5>Personal Projects</Heading5>
@@ -28,7 +28,6 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#web-development"} />
       </div>
 
       <div className="grid gap-8 " id="#data-science">
@@ -47,7 +46,6 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#data-science"} />
       </div>
       <div className="grid gap-8 " id="#p5js">
         <Heading2>Featured P5js Projects</Heading2>
@@ -65,8 +63,8 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#p5js"} />
       </div>
+        <SeeMoreLink href={"/projects"} />
     </section>
   );
 }

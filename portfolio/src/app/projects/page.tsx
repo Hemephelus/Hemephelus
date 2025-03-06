@@ -1,7 +1,6 @@
 import { Heading5, Heading2 } from "@/components/ui/Texts/Heading";
 import React from "react";
 import { projects } from "@/constances";
-import { SeeMoreLink } from "@/components/ui/Links";
 import { ClientCard } from "@/app/hompageComponents/JobCard";
 
 export default function Projects() {
@@ -28,7 +27,6 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#web-development"} />
       </div>
 
       <div className="grid gap-8 " id="#data-science">
@@ -47,7 +45,6 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#data-science"} />
       </div>
       <div className="grid gap-8 " id="#p5js">
         <Heading2>Featured P5js Projects</Heading2>
@@ -65,7 +62,6 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-        <SeeMoreLink href={"/projects#p5js"} />
       </div>
     </section>
   );

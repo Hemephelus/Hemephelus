@@ -1,5 +1,6 @@
 import { ClipboardCopy } from "@/components/ui/CopyToClipboard";
 import { MapPinIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +13,6 @@ export default function Page() {
         </p>
         <div className="flex gap-1 items-center">
           <MapPinIcon className="size-4" />
-          {/* <img src='/Flag_of_Nigeria.svg' alt='flag' className='w-5 h-6'/> */}
           <span>Lagos, Nigeria.</span>
         </div>
 
@@ -22,7 +22,7 @@ export default function Page() {
             target="_blank"
             className="flex gap-4 items-center"
           >
-            <img src="/github.svg" alt="github" className="w-8 h-8" />{" "}
+            <Image src="/github.svg" alt="github" width={8} height={8}/>
             <span>/Hemephelus</span>
           </Link>
           <Link
@@ -30,7 +30,7 @@ export default function Page() {
             target="_blank"
             className="flex gap-4  items-center"
           >
-            <img src="/linkedin.svg" alt="linkedin" className="w-8 h-8" />
+            <Image src="/linkedin.svg" alt="linkedin" width={8} height={8}/>
             <span>/nwachukwu-ujubuonu-303149161</span>
           </Link>
           <Link
@@ -38,7 +38,7 @@ export default function Page() {
             target="_blank"
             className="flex gap-4 items-center"
           >
-            <img src="/twitter-bird.svg" alt="twitter" className="w-8 h-8" />
+            <Image src="/twitter-bird.svg" alt="twitter" width={8} height={8}/>
             <span>/Hemephelus1</span>
           </Link>
         </div>
@@ -48,7 +48,7 @@ export default function Page() {
         </p>
       </div>
       <div className="bg-dark1 relative">
-        <img src="/me.jpg" className="" alt="" />
+        <Image src="/me.jpg" className="" alt="" />
         <div className="bg-dark1  h-full w-full absolute top-0 left-0 opacity-70"></div>
       </div>
     </section>

@@ -7,6 +7,7 @@ export const projects = {
         subTitle:
           "A web-based app to help apps script developers find apps script libraries. (Full-Stack)",
         title: "Glascript",
+        role: "Full-stack Developer",
         projectLink: "/projects/glascript",
         websiteLink: "https://www.glascript.com/",
         overview: [
@@ -44,6 +45,7 @@ export const projects = {
         subTitle:
           "A web-based dice game people can play in with friends. (Front-End)",
         title: "Greedy pig",
+        role: "Front-End Developer",
         projectLink: "/projects/greedy-pig",
         websiteLink: "https://greedy-pig.vercel.app/",
         overview: [
@@ -81,6 +83,7 @@ export const projects = {
         subTitle:
           "A web-based simulator modeling Nigeria's economy, allowing users to adjust policies and visualize their impact. (Front-End)",
         title: "Moniac",
+        role: "Front-End Developer",
         projectLink: "/projects/moniac",
         websiteLink: "https://moniac.vercel.app/",
         overview: [
@@ -97,11 +100,9 @@ export const projects = {
           "User Engagement: Incorporated an Easter egg feature allowing users to click and move elements around the screen, enhancing interactivity and user engagement.",
         ],
         result: [
-          "Positive Feedback: Users appreciate the interactive nature of the tool, finding it both informative and engaging."
+          "Positive Feedback: Users appreciate the interactive nature of the tool, finding it both informative and engaging.",
         ],
-        slide_imgs: [
-          "/moniac/home.jpg",
-        ],
+        slide_imgs: ["/moniac/home.jpg"],
         tools: [
           { name: "Tailwind", src: "/tools/tailwind.png" },
           { name: "JavaScript", src: "/tools/javascript.png" },
@@ -114,7 +115,8 @@ export const projects = {
       //   logoAlt: "osisi",
       //   subTitle: "A web-based representation of my family tree. (Front-End)",
       //   title: "Osisi",
-      //   projectLink: "/projects/osisi",
+      // role:"Front-End Developer"
+      // projectLink: "/projects/osisi",
       //   websiteLink: "https://osisi.vercel.app/",
       //   overview: [],
       //   problem: [],
@@ -255,6 +257,7 @@ export const projects = {
       title: "SPPG Dashboard",
       subTitle:
         "A web-based dashboard that shows students status through out the academic program. (Full-Stack)",
+      role: "Full-Stack Developer",
       projectLink: "/projects/sppg-dashboard",
       websiteLink: "https://thesppg.org/",
       //
@@ -267,10 +270,12 @@ export const projects = {
       ],
       //
       solution: [
-        "My initial solution was to add a simple Google Sheets layer to sort Airtable data and use Apps Script to create API endpoints for the frontend. This approach worked during the demo stage, but after three months of deployment, over 50% of users could not see their data.",
-        "To improve reliability, I used Apps Script as a cron job to fetch data from Airtable and update Firebase every hour. However, the architecture built around Google Sheets didn't translate well to Firebase—I kept hitting the 50,000 daily read quota.",
+        "Using Nextjs, I developed the front-end of the application. I made some improvements to the pre-existing UI designs making the app more user friendly.",
+        "My initial solution to the Airtable rate limit was to add a simple Google Sheets layer to store Airtable data and use Apps Script to create API endpoints for the frontend. This approach worked during the demo stage, but after three months of deployment, over 50% of users could not see their data.",
+        "To improve reliability, I used Apps Script as a cron job to fetch data from Airtable and update Firebase every hour. However, the architecture built around Google Sheets didn't translate well to Firebase—I kept hitting the 50,000 daily read quota. I redesigned the way the data was stored for a faster look up time.",
 
         "For authentication, I implemented an OTP system. Users enter their matriculation number, triggering an email containing a one-time password to the associated email address.",
+
       ],
       result: [
         " After making architectural improvements, I reduced the reads to fewer than 2,000 per day, ensuring a more stable solution. [See Last slide]",
@@ -283,7 +288,7 @@ export const projects = {
         "/sppg/sppg-g-assign.jpg",
         "/sppg/sppg-g-faq.jpg",
         "/sppg/sppg-before.jpg",
-        "/sppg-after.jpg",
+        "/sppg/sppg-after.jpg",
       ],
       tools: [
         { name: "Nextjs", src: "/tools/nextjs.png" },
@@ -301,9 +306,11 @@ export const projects = {
     {
       logoSrc: "/Infamy_Logo_Crown_Logo.png",
       logoAlt: "infamy",
-      subTitle: "Technical Lead",
+      subTitle:
+        "Built a dedicated website to provide a seamless experience for users to create their teams effortlessly, reducing friction in tournament sign-ups.",
       title: "Infamy Fantasy Esports",
       dateRange: "Apr 2022 - Present",
+      role: "Technical Lead",
       projectLink: "/projects/infamy",
       websiteLink: "https://www.infamy.gg/",
       overview: [

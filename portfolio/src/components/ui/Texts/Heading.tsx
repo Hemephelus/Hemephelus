@@ -29,7 +29,7 @@ export function Heading5({ children }: HeadingProps) {
 
 export function Heading6({ children }: HeadingProps) {
   return (
-    <h5 className="font-space-grotesk font-medium text-xl uppercase">
+    <h5 className="font-space-grotesk font-medium text-sm uppercase">
       {children}
     </h5>
   );
