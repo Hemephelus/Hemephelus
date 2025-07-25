@@ -275,7 +275,6 @@ export const projects = {
         "To improve reliability, I used Apps Script as a cron job to fetch data from Airtable and update Firebase every hour. However, the architecture built around Google Sheets didn't translate well to Firebase—I kept hitting the 50,000 daily read quota. I redesigned the way the data was stored for a faster look up time.",
 
         "For authentication, I implemented an OTP system. Users enter their matriculation number, triggering an email containing a one-time password to the associated email address.",
-
       ],
       result: [
         " After making architectural improvements, I reduced the reads to fewer than 2,000 per day, ensuring a more stable solution. [See Last slide]",
@@ -303,6 +302,55 @@ export const projects = {
     },
   ],
   work_experience: [
+    {
+      logoSrc: "/osisi.png",
+      logoAlt: "osisi",
+      subTitle:
+        "A web-based platform that helps African families preserve and celebrate their heritage through visual, interactive family trees.",
+      title: "Osisi",
+      dateRange: "May 2025 - Present",
+      role: "Creator",
+      projectLink: "/projects/osisi",
+      websiteLink: "https://www.osisi.xyz/",
+      overview: [
+        "Osisi is a platform that helps African families preserve and celebrate their heritage through visual, interactive family trees. It combines storytelling, genealogy, and technology to make it easy for users to build multi-generational family structures and share their family’s legacy with others. The mission is to make every African family's story visible and preserved for future generations.",
+      ],
+      problem: [
+        "Lack of accessible tools for documenting and visualizing African family histories in culturally relevant ways.",
+        "Manual family tree creation methods (pen and paper, spreadsheets) lacked interactivity, scalability, and emotional impact.",
+        "Missing infrastructure for sharing and collaborating on family trees digitally, especially across generations and locations.",
+      ],
+      solution: [
+        "Designed and built a performant web application that lets users visually construct family trees with photos, relationships, and stories.",
+        "Integrated Cloudinary to handle image uploads and processing, allowing families to preserve family member photos across generations.",
+        "Implemented a custom tree rendering engine using p5.js and TypeScript to handle complex, large-scale family visualizations.",
+        "Built collaboration features and family groups to allow multiple users to contribute to the same family structure.",
+        "Set up infrastructure for eventual physical product generation (scrolls, photo albums) and premium features through subscriptions.",
+      ],
+      result: [
+        "Successfully launched alpha version with early adopters who built multi-generational family trees and gave positive feedback.",
+        "Enabled users to upload and visualize dozens of family members in real-time with performant rendering even on mobile.",
+        "Reduced friction in documenting family history, especially for elders who participated in the interview-led onboarding experience.",
+        "Established foundation for monetization through physical product sales and digital premium features.",
+      ],
+      slide_imgs: [
+        "/osisi/family-tree.png",
+        "/osisi/family-member.png",
+        // "/osisi/create-member.jpg",
+        // "/osisi/collaborators.jpg",
+        // "/osisi/homepage.jpg",
+        // "/osisi/share-modal.jpg",
+      ],
+      tools: [
+        { name: "React", src: "/tools/react.png" },
+        { name: "TypeScript", src: "/tools/typescript.png" },
+        { name: "Tailwind", src: "/tools/tailwind.png" },
+        { name: "Cloudflare", src: "/tools/cloudflare.png" },
+        { name: "Convex", src: "/tools/convex.jpeg" },
+        { name: "Auth0", src: "/tools/auth0.png" },
+        { name: "Resend", src: "/tools/resend.png" },
+      ],
+    },
     {
       logoSrc: "/Infamy_Logo_Crown_Logo.png",
       logoAlt: "infamy",

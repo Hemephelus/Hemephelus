@@ -11,7 +11,7 @@ export default function WorkExperiences() {
         <Heading2>Places I have worked</Heading2>
       </div>
 
-      <ul>
+      <ul className="grid gap-8 lg:grid-cols-1">
         {projects.work_experience.map((work,index) => (
           <li key={index}>
             <JobCard
