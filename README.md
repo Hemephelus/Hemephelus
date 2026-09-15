@@ -2,7 +2,7 @@
 - 👀 I’m interested in Math, Programming, Spreadsheets, and Frontend Development.
 - 🌱 I’m knowledgeable in React, Next, and Apps Script
 - 🌱 I am currently working on infamy.gg
-- 📫 How to reach me nwachukwuujubuonu@gmail.com
+- 📫 How to reach me [Here](https://www.nwachukwuujubuonu.com/)
 
 <!---
 Hemephelus/Hemephelus is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
